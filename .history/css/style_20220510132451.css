@@ -72,7 +72,7 @@
     .quote-container {
         width: 60%;
         height: 40%;
-        margin: auto;
+        margin: 100% 100%;
         display: flex;
         justify-content: center;
         align-items: center;
