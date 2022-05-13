@@ -1,0 +1,14 @@
+html {
+    background-color: #111111;
+    color: white;
+}
+
+.main-navbar {
+    background-color: #373737;
+}
+
+body,
+.main-navbar {
+    padding: 0;
+    margin: 0;
+}

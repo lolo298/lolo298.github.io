@@ -142,6 +142,13 @@ body {
 
 #particles canvas {
     display: block;
+    /* vertical-align: bottom;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+        -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+        transition: opacity .8s ease, transform 1.4s ease */
 }
 
 #particles {
@@ -210,7 +217,7 @@ body {
     width: 50%;
     height: 90%;
     padding: 2%;
-    background-color: rgba(126, 126, 126, 0.6);
+    background-color: rgba(126, 126, 126, 0.42);
 }
 
 .title-right {
@@ -222,7 +229,7 @@ body {
 
 .title-underline-right {
     right: 100%;
-    width: 150%;
+    width: 120%;
     height: 0.5vh;
     background-color: #94a5d1;
 }

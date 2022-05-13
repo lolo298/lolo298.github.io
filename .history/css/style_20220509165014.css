@@ -1,0 +1,40 @@
+html {
+    background-color: #111111;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.main-container {
+    color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-navbar {
+    background-color: #373737;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-navbar>* {
+    margin: 0;
+}
+
+.main-navbar-list {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.main-navbar-item>a {
+    text-decoration: none;
+    color: white;
+}

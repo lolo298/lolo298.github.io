@@ -1,0 +1,28 @@
+html {
+    background-color: #111111;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.main-container {
+    color: white;
+    height: 100vh;
+}
+
+.main-navbar {
+    background-color: #373737;
+    height: 10%;
+    display: flex;
+}
+
+.main-navbar-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+}

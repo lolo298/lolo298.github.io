@@ -1,0 +1,139 @@
+    html {
+        background-color: #111111;
+    }
+    
+    body {
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    /*-------------------*/
+    /* styling of navbar */
+    /*-------------------*/
+    
+    .main-container {
+        z-index: 1;
+        color: white;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .main-navbar {
+        background-color: #373737;
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .main-navbar>* {
+        margin: 0;
+    }
+    
+    .main-navbar>h1 {
+        width: 20%;
+        margin-left: 2%;
+    }
+    
+    .main-navbar-list {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        list-style: none;
+        margin-right: 2%;
+        height: 100%;
+    }
+    
+    .main-navbar-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        width: max-content;
+        height: 100%;
+        padding: 0% 2% 0% 2%;
+    }
+    
+    .main-navbar-item:hover {
+        background-color: #6A6A6A;
+    }
+    
+    .main-navbar-item>div {
+        width: max-content;
+    }
+    /*-------------------------*/
+    /* styling of landing page */
+    /*-------------------------*/
+    
+    .landing {
+        height: 90%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /*------------------*/
+    /* styling of quote */
+    /*------------------*/
+    
+    .quote-container {
+        width: 50%;
+        height: 35%;
+        padding: 5%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(196, 196, 196, 0.42);
+        z-index: 10;
+    }
+    
+    .quote-text {
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+    
+    .author-content {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .author {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .author-separation {
+        width: 30%;
+        height: 4%;
+        background-color: white;
+    }
+    
+    #particles canvas {
+        display: block;
+        /* vertical-align: bottom;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+        -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+        transition: opacity .8s ease, transform 1.4s ease */
+    }
+    
+    #particles {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: -10;
+        top: 0;
+        left: 0
+    }

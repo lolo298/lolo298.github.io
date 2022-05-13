@@ -1,24 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/functions.js"></script>
-    <script src="js/particles.js"></script>
-    <title>Portfolio</title>
+ /* particlesJS background */ function particlesJS() { particlesJS.load('particles', 'assets/particles.json', function() { console.log('callback - particles.js config loaded'); }); }p-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/functions.js"></script>
+<script src="js/particles.js"></script>
+<title>Portfolio</title>
 </head>
 
 <body>
-    <div id="particles"></div>
-    <script>
-        /* particlesJS background */
-        particlesJS.load('particles', 'assets/particles.json', function() {
-            console.log('callback - particles.js config loaded');
-        });
-    </script>
+    <div id="particles" onload="particlesJS()"></div>
     <div class="main-container">
         <nav class="main-navbar">
             <h1>Lorenzo Aoulini</h1>
@@ -60,13 +49,13 @@
 
         </div>
         <div class="about">
-            <div class="title-left">
+            <div class="title">
                 <div class="title-content">
                     <div>
                         <h2>About me</h2>
                     </div>
                 </div>
-                <div class="title-underline-left"></div>
+                <div class="title-underline"></div>
             </div>
             <div class="about-content">
                 <div class="cv">
@@ -79,23 +68,6 @@
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="projects">
-            <div class="title-right">
-                <div class="title-content">
-                    <div>
-                        <div>
-                            <h2>Projects</h2>
-                        </div>
-                    </div>
-                    <div class="title-underline-right"></div>
-
-                </div>
-            </div>
-            <div class="Projects-content">
-            </div>
-        </div>
-    </div>
 
 </body>
 

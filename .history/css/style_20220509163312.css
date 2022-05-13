@@ -1,0 +1,16 @@
+.main-container {
+    background-color: #111111;
+    color: white;
+    height: 100vh;
+}
+
+.main-navbar {
+    background-color: #373737;
+    height: 50%;
+}
+
+body,
+.main-navbar {
+    padding: 0;
+    margin: 0;
+}
