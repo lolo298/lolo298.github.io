@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
     <script src="js/functions.js"></script>
     <script src="js/particles.js"></script>
     <title>Portfolio</title>
@@ -21,24 +26,26 @@
     </script>
     <div class="main-container">
         <nav class="main-navbar">
-            <h1>Lorenzo Aoulini</h1>
+            <a class="name" href="index.html">
+                <h1>Lorenzo Aoulini</h1>
+            </a>
             <div class="main-navbar-list">
-                <a class="main-navbar-item" href="#">
+                <a class="main-navbar-item" href="#contact">
                     <div>Contact</div>
                 </a>
-                <a class="main-navbar-item" href="#">
+                <a class="main-navbar-item" href="#skills">
                     <div>Skills</div>
                 </a>
-                <a class="main-navbar-item" href="#">
+                <a class="main-navbar-item" href="#projects">
                     <div>Projects</div>
                 </a>
-                <a class="main-navbar-item" href="#">
+                <a class="main-navbar-item" href="#about">
                     <div>About me</div>
                 </a>
             </div>
 
         </nav>
-        <div class="landing">
+        <div class="landing" id="landing">
             <div class="quote-container">
                 <div class="quote-text">
                     <q>
@@ -59,6 +66,7 @@
             </div>
 
         </div>
+        <div class="separation" id="about"></div>
         <div class="about">
             <div class="title-left">
                 <div class="title-content">
@@ -80,21 +88,97 @@
                 </div>
             </div>
         </div>
+        <div class="separation" id="projects"></div>
         <div class="projects">
             <div class="title-right">
                 <div class="title-content">
                     <div>
-                        <div>
-                            <h2>Projects</h2>
-                        </div>
+                        <h2>Projects</h2>
                     </div>
                     <div class="title-underline-right"></div>
 
                 </div>
             </div>
-            <div class="Projects-content">
+            <div class="projects-content">
+
+                <div class="projects-carrousel">
+                    <div class="project-item active">
+                        <a href="#" class="bright"><img src="assets/DesignProjects.jpg"></a>
+                        <p class="centered">Design</p>
+                    </div>
+                    <div class=" project-item next">
+                        <a href="#" class="bright"><img src="assets/phoenix.jpg"></a>
+                        <p class="centered">Blue Fantasy</p>
+                    </div>
+                    <div class="project-item">
+                        <a href="projects/webDex.html" class="bright"><img src="assets/webDex.png"></a>
+                        <p class="centered">webDex</p>
+                    </div>
+                    <div class="project-item">
+                        <a href="#" class="bright"><img src="assets/DesignProjects.jpg"></a>
+                        <p class="centered">Design</p>
+                    </div>
+                    <div class="project-item">
+                        <a href="#" class="bright"><img src="assets/phoenix.jpg"></a>
+                        <p class="centered">Blue Fantasy</p>
+                    </div>
+                    <div class="project-item prev">
+                        <a href="projects/webDex.html" class="bright"><img src="assets/webDex.png"></a>
+                        <p class="centered">webDex</p>
+                    </div>
+                    <div class="button-container">
+                        <div class="button-left btn"><i class="fas fa-angle-left"></i></div>
+                        <div class="button-right btn"><i class="fas fa-angle-right"></i></div>
+                    </div>
+                    <script>
+                        const slides = document.querySelectorAll(".project-item");
+                        const button = document.querySelectorAll(".btn");
+                        const bright = document.querySelectorAll(".bright");
+
+                        let current = 0;
+                        let prev = 5;
+                        let next = 1;
+
+                        for (let i = 0; i < button.length; i++) {
+                            button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
+                        }
+
+                        const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
+
+                        const gotoNext = () => current < 5 ? gotoNum(current + 1) : gotoNum(0);
+
+                        const gotoNum = number => {
+                            current = number;
+                            prev = current - 1;
+                            next = current + 1;
+
+                            for (let i = 0; i < slides.length; i++) {
+                                slides[i].classList.remove("active");
+                                slides[i].classList.remove("prev");
+                                slides[i].classList.remove("next");
+
+                            }
+
+                            if (next == 6) {
+                                next = 0;
+                            }
+
+                            if (prev == -1) {
+                                prev = 5;
+                            }
+
+                            slides[current].classList.add("active");
+                            slides[prev].classList.add("prev");
+                            slides[next].classList.add("next");
+                        }
+                    </script>
+                </div>
+
             </div>
         </div>
+        <div class="separation" id="skills"></div>
+
+        <div class="separation" id="contact"></div>
     </div>
 
 </body>
