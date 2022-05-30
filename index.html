@@ -5,28 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
-    <script src="js/functions.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/particles.js"></script>
+    <script src="js/functions.js"></script>
+
     <title>Portfolio</title>
 </head>
 
 <body>
     <div id="particles"></div>
-    <script>
-        /* particlesJS background */
-        particlesJS.load('particles', 'assets/particles.json', function() {
-            console.log('callback - particles.js config loaded');
-        });
-    </script>
     <div class="main-container">
         <nav class="main-navbar">
             <a class="name" href="index.html">
@@ -180,7 +180,38 @@
             </div>
         </div>
         <div class="separation" id="skills"></div>
-
+        <div class="skills">
+            <div class="title-left">
+                <div class="title-content">
+                    <div>
+                        <h2>Skills</h2>
+                    </div>
+                    <div class="title-underline-left"></div>
+                </div>
+            </div>
+            <div class="skills-content">
+                <div id="skills-carrousel">
+                    <div>
+                        skills 1
+                    </div>
+                    <div>
+                        skills 2
+                    </div>
+                    <div>
+                        skills 3
+                    </div>
+                    <div>
+                        skills 4
+                    </div>
+                    <div>
+                        skills 5
+                    </div>
+                    <div>
+                        skills 6
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="separation" id="contact"></div>
     </div>
 

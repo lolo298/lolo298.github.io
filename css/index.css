@@ -46,7 +46,7 @@
 .quote-text {
     font-size: 3em;
     font-weight: thin;
-    font-family: 'Amatic SC', cursive;
+    font-family: "Amatic SC", cursive;
 }
 
 .author-content {
@@ -177,27 +177,6 @@
     align-items: center;
     padding: 5%;
 }
-
-
-/*
-.project {
-    width: 20vw;
-    height: 20vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: -1;
-    background-image: url("../assets/DesignProjects.jpg");
-    background-size: cover;
-    border-radius: 50%;
-}
-
-
- .project p {
-    padding: 9vw;
-    backdrop-filter: blur(5px);
-    border-radius: 50%;
-} */
 
 .projects-carrousel {
     position: relative;
@@ -361,4 +340,19 @@
 .left {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
+}
+
+
+/*------------------------*/
+
+
+/* styling of skills page */
+
+
+/*------------------------*/
+
+.slick-slide {
+    width: 10vw;
+    height: 20vh;
+    background-color: #555555;
 }
