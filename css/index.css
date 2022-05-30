@@ -251,7 +251,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 275px;
+    width: 30vw;
     z-index: 100;
 }
 
@@ -273,9 +273,10 @@
 .button-container .button-left:before {
     content: "";
     position: fixed;
+    /*
     top: 50%;
     left: -20%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);*/
     width: 5vw;
     height: 5vw;
     background-color: rgba(0, 0, 0, 1);
@@ -286,9 +287,10 @@
 .button-container .button-right:before {
     content: "";
     position: fixed;
+    /*
     top: 50%;
     left: 120%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);*/
     width: 5vw;
     height: 5vw;
     background-color: rgba(0, 0, 0, 1);
@@ -334,4 +336,29 @@
 
 .active:hover .centered {
     display: none;
+}
+
+.btn {
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    z-index: 100;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
 }
