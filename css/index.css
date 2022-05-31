@@ -329,7 +329,7 @@
     
     .skills {
         width: 100%;
-        height: 100%;
+        height: 80%;
     }
     
     .skills-content {
@@ -402,4 +402,33 @@
     
     .slick-slide>div:hover {
         background-color: #3b3b3b;
+    }
+    /*-------------------*/
+    /* styling of Footer */
+    /*-------------------*/
+    
+    .footer-back {
+        z-index: 50;
+        position: relative;
+        left: -5%;
+        background-color: #524f71;
+        width: 110%;
+        height: 50%;
+        border-radius: 50% 50% 0 0;
+    }
+    
+    .footer-back2 {
+        position: relative;
+        top: -52%;
+        left: -5%;
+        background-color: #7d78ad;
+        width: 110%;
+        height: 50%;
+        border-radius: 100% 100% 0 0;
+    }
+    
+    footer {
+        z-index: 100;
+        position: relative;
+        top: 10%;
     }
