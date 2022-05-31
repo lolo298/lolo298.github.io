@@ -1,0 +1,310 @@
+/* styling of HTML skill */
+
+.html {
+    position: relative;
+    width: 60%;
+    height: 60%;
+}
+
+.html-text {
+    z-index: 100;
+    position: relative;
+    left: 32%;
+    display: none;
+}
+
+.slick-slide>div:hover .html-text,
+.slick-slide>div:hover .html {
+    display: block;
+    right: 11%;
+}
+
+.slick-slide>div:hover .html {
+    filter: brightness(.3);
+}
+
+
+/* styling of CSS skill */
+
+.css {
+    position: relative;
+    width: 45%;
+    height: 45%;
+}
+
+.css-text {
+    z-index: 100;
+    position: relative;
+    left: 25%;
+    display: none;
+}
+
+.slick-slide>div:hover .css-text,
+.slick-slide>div:hover .css {
+    display: block;
+    right: 5%;
+}
+
+.slick-slide>div:hover .css {
+    filter: brightness(.3);
+}
+
+
+/* styling of js skill */
+
+.js {
+    position: relative;
+    width: 73%;
+    height: 73%;
+}
+
+.js-text {
+    z-index: 100;
+    position: relative;
+    left: 35%;
+    display: none;
+}
+
+.slick-slide>div:hover .js-text,
+.slick-slide>div:hover .js {
+    display: block;
+    right: 14%;
+}
+
+.slick-slide>div:hover .js {
+    filter: brightness(.3);
+}
+
+
+/* styling of php skill */
+
+.php {
+    position: relative;
+    width: 60%;
+    height: 60%;
+}
+
+.php-text {
+    z-index: 100;
+    position: relative;
+    left: 30%;
+    display: none;
+}
+
+.slick-slide>div:hover .php-text,
+.slick-slide>div:hover .php {
+    display: block;
+    right: 5%;
+}
+
+.slick-slide>div:hover .php {
+    filter: brightness(.3);
+}
+
+
+/* styling of sql skill */
+
+.sql {
+    position: relative;
+    width: 60%;
+    height: 60%;
+}
+
+.sql-text {
+    z-index: 100;
+    position: relative;
+    left: 32%;
+    display: none;
+}
+
+.slick-slide>div:hover .sql-text,
+.slick-slide>div:hover .sql {
+    display: block;
+    right: 5%;
+}
+
+.slick-slide>div:hover .sql {
+    filter: brightness(.3);
+}
+
+
+/* styling of C# skill */
+
+.c {
+    position: relative;
+    width: 60%;
+    height: 60%;
+}
+
+.c-text {
+    z-index: 100;
+    position: relative;
+    left: 32%;
+    display: none;
+}
+
+.slick-slide>div:hover .c-text,
+.slick-slide>div:hover .c {
+    display: block;
+    right: 5%;
+}
+
+.slick-slide>div:hover .c {
+    filter: brightness(.3);
+}
+
+
+/* styling of Affinity skill */
+
+.affinity {
+    position: relative;
+    width: 60%;
+    height: 60%;
+}
+
+.affinity-text {
+    z-index: 100;
+    position: relative;
+    left: 32%;
+    display: none;
+}
+
+.slick-slide>div:hover .affinity-text,
+.slick-slide>div:hover .affinity {
+    display: block;
+    right: 17%;
+}
+
+.slick-slide>div:hover .affinity {
+    filter: brightness(.3);
+}
+
+
+/* styling of Adobe skill */
+
+.adobe {
+    position: relative;
+    width: 60%;
+    height: 60%;
+}
+
+.adobe-text {
+    z-index: 100;
+    position: relative;
+    left: 35%;
+    display: none;
+}
+
+.slick-slide>div:hover .adobe-text,
+.slick-slide>div:hover .adobe {
+    display: block;
+    right: 13%;
+}
+
+.slick-slide>div:hover .adobe {
+    filter: brightness(.3);
+}
+
+
+/* styling of DaVinci skill */
+
+.davinci {
+    position: relative;
+    width: 60%;
+    height: 60%;
+}
+
+.davinci-text {
+    z-index: 100;
+    position: relative;
+    left: 35%;
+    display: none;
+}
+
+.slick-slide>div:hover .davinci-text,
+.slick-slide>div:hover .davinci {
+    display: block;
+    right: 13%;
+}
+
+.slick-slide>div:hover .davinci {
+    filter: brightness(.3);
+}
+
+
+/* styling of Figma skill */
+
+.figma {
+    position: relative;
+    width: 40%;
+    height: 40%;
+}
+
+.figma-text {
+    z-index: 100;
+    position: relative;
+    left: 25%;
+    display: none;
+}
+
+.slick-slide>div:hover .figma-text,
+.slick-slide>div:hover .figma {
+    display: block;
+    right: 8%;
+}
+
+.slick-slide>div:hover .figma {
+    filter: brightness(.3);
+}
+
+
+/* styling of Unreal Engine skill */
+
+.ue {
+    position: relative;
+    width: 60%;
+    height: 60%;
+}
+
+.ue-text {
+    z-index: 100;
+    position: relative;
+    left: 35%;
+    display: none;
+}
+
+.slick-slide>div:hover .ue-text,
+.slick-slide>div:hover .ue {
+    display: block;
+    right: 19%;
+}
+
+.slick-slide>div:hover .ue {
+    filter: brightness(.3);
+}
+
+
+/* styling of Unity skill */
+
+.unity {
+    position: relative;
+    width: 60%;
+    height: 60%;
+}
+
+.unity-text {
+    z-index: 100;
+    position: relative;
+    left: 35%;
+    display: none;
+}
+
+.slick-slide>div:hover .unity-text,
+.slick-slide>div:hover .unity {
+    display: block;
+    right: 7%;
+}
+
+.slick-slide>div:hover .unity {
+    filter: brightness(.3);
+}

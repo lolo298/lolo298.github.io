@@ -7,16 +7,13 @@ particlesJS.load('particles', 'assets/particles.json', function() {
 //Slick for carrousel
 $(document).ready(function() {
     $('#skills-carrousel').slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
         rows: 2,
-        dots: false,
         arrows: true,
-        infinite: true,
         speed: 300,
-        slidesToShow: 6,
-        slidesToScroll: 6,
-        centerMode: true,
-        centerPadding: '60px',
+        infinite: true,
         variableWidth: true,
-        variableHeight: true
+        useTransform: false
     });
 });
