@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/skills.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="waypoint/lib/noframework.waypoints.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/functions.js"></script>
 
@@ -35,16 +36,20 @@
             </a>
             <div class="main-navbar-list">
                 <a class="main-navbar-item" href="#contact">
-                    <div>Contact</div>
+                    <div class="navbar-text contact-nav">Contact</div>
+                    <div class="follow-inactive follow-contact follow"></div>
                 </a>
                 <a class="main-navbar-item" href="#skills">
-                    <div>Skills</div>
+                    <div class="navbar-text skills-nav">Skills</div>
+                    <div class="follow-inactive follow-skill follow"></div>
                 </a>
                 <a class="main-navbar-item" href="#projects">
-                    <div>Projects</div>
+                    <div class="navbar-text project-nav">Projects</div>
+                    <div class="follow-inactive follow-project follow"></div>
                 </a>
                 <a class="main-navbar-item" href="#about">
-                    <div>About me</div>
+                    <div class="navbar-text about-nav">About me</div>
+                    <div class="follow-active follow-about follow"></div>
                 </a>
             </div>
 
@@ -81,13 +86,15 @@
                 <div class="title-underline-left"></div>
             </div>
             <div class="about-content">
-                <div class="cv">
-                    <img src="assets/cv.png" alt="mon CV">
-                </div>
+                <a class="cv-container" href="assets/Aoulini Lorenzo CV.pdf">
+                    <div class="cv">
+                        <img src="assets/cv.png" alt="mon CV">
+                    </div>
+                    <div class="download">Download my CV</div>
+                </a>
                 <div class="presentation">
                     <p>
-                        Lorenzo Aoulini is a web developer with a passion for creating beautiful and functional websites. He is currently working as a freelancer and is currently learning how to code. He is also a student of the web development course at the University of Technology
-                        in Lannion.
+                        I’m an student at the IUT of Lannion in MMI, I am into developpement since 2017. I am passionate by 3D desgin next to that you’ll find my collection of manga and video games, I also practice Thaï boxing for 3 years now
                     </p>
                 </div>
             </div>
@@ -193,51 +200,52 @@
             <div class="skills-content">
                 <div id="skills-carrousel">
                     <div class="slide-content html-slide">
-                        <p class="html-text">HTML 5</p>
+                        <p class="html-text skill-text">HTML 5</p>
                         <img src="assets/skills/html.png" alt="html" class="html">
                     </div>
-                    <div class="slide-content css-slide">
-                        <p class="css-text">CSS</p>
-                        <img src="assets/skills/css.png" alt="css" class="css">
-                    </div>
-                    <div class="slide-content js-slide">
-                        <p class="js-text">JavaScript</p>
-                        <img src="assets/skills/js.png" alt="js" class="js">
-                    </div>
                     <div class="slide-content php-slide">
-                        <p class="php-text">PHP</p>
+                        <p class="php-text skill-text">PHP</p>
                         <img src="assets/skills/php.png" alt="php" class="php">
                     </div>
+                    <div class="slide-content css-slide">
+                        <p class="css-text skill-text">CSS</p>
+                        <img src="assets/skills/css.png" alt="css" class="css">
+                    </div>
                     <div class="slide-content sql-slide">
-                        <p class="sql-text">SQL</p>
+                        <p class="sql-text skill-text">SQL</p>
                         <img src="assets/skills/sql.png" alt="sql" class="sql">
                     </div>
+                    <div class="slide-content js-slide">
+                        <p class="js-text skill-text">JavaScript</p>
+                        <img src="assets/skills/js.png" alt="js" class="js">
+                    </div>
+                    <div class="slide-content wordpress-slide">
+                        <p class="wordpress-text">Wordpress</p>
+                        <img src="assets/skills/wordpress.png" alt="wordpress" class="wordpress">
+                    </div>
                     <div class="slide-content c-slide">
-                        <p class="c-text">C#</p>
+                        <p class="c-text skill-text">C#</p>
                         <img src="assets/skills/C.png" alt="c" class="c">
                     </div>
-                    <div class="slide-content affinity-slide">
-                        <p class="affinity-text">Suite Affinity</p>
-                        <img src="assets/skills/Affinity.png" alt="affinity" class="affinity">
-                    </div>
                     <div class="slide-content adobe-slide">
-                        <p class="adobe-text">Adobe CC</p>
+                        <p class="adobe-text skill-text">Adobe CC</p>
                         <img src="assets/skills/AdobeCC.png" alt="adobe" class="adobe">
                     </div>
                     <div class="slide-content davinci-slide">
-                        <p class="davinci-text">Adobe CC</p>
+                        <p class="davinci-text skill-text">DaVinci</p>
                         <img src="assets/skills/Davinci.png" alt="davinci" class="davinci">
                     </div>
+                    <div class="slide-content affinity-slide">
+                        <p class="affinity-text skill-text">Suite Affinity</p>
+                        <img src="assets/skills/Affinity.png" alt="affinity" class="affinity">
+                    </div>
+
                     <div class="slide-content figma-slide">
-                        <p class="figma-text">Figma</p>
+                        <p class="figma-text skill-text">Figma</p>
                         <img src="assets/skills/Figma.png" alt="figma" class="figma">
                     </div>
-                    <div class="slide-content unity-slide">
-                        <p class="unity-text">Unity</p>
-                        <img src="assets/skills/Unity.png" alt="unity" class="unity">
-                    </div>
                     <div class="slide-content ue-slide">
-                        <p class="ue-text">Unreal engine</p>
+                        <p class="ue-text skill-text">Unreal engine</p>
                         <img src="assets/skills/UE4.png" alt="Unreal engine" class="ue">
                     </div>
                 </div>
@@ -246,7 +254,24 @@
         <div class="separation" id="contact"></div>
         <footer>
             <div class="footer-content">
-                <a href="mailto:lorenzoaoulini@gmail.com?subject=Contact" class="mail">lorenzoaoulini@gmail.com</a>
+                <div class="resaux">
+                    <a class="github" href="https://github.com/lolo298">
+                        <div></div>
+                    </a>
+                    <a class="linkedin" href="https://www.linkedin.com/in/lorenzo-aoulini-a6772522a">
+                        <div></div>
+                    </a>
+                    <a class="etude" href="https://iut-lannion.univ-rennes1.fr">
+                        <div></div>
+                    </a>
+                    <a class="mail" href="mailto:lorenzoaoulini@mail.com?subject=contact">
+                        <div></div>
+                    </a>
+                </div>
+                <a class="top" href="#landing">
+                    <div>
+                    </div>
+                </a>
             </div>
         </footer>
         <div class="footer-back"></div>

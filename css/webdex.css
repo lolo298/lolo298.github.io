@@ -1,0 +1,87 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texte {
+    margin-top: 10%;
+    height: auto;
+    max-height: 90%;
+    width: 80vw;
+    font-size: 2.5em;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50vh;
+    width: 80vw;
+    margin: 2% 15%;
+    font-size: 2em;
+}
+
+img {
+    height: 40vh;
+    width: auto;
+    max-width: 60vw;
+}
+
+p {
+    color: white;
+}
+
+.images div {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.website {
+    color: white;
+    text-decoration: none;
+    width: fit-content;
+    height: auto;
+    padding: 10%;
+    background-color: #111111;
+    border: #cc960e solid 2px;
+    transition: background-color 300ms ease-in-out;
+    border-radius: 3vw;
+}
+
+.website:hover {
+    background-color: #cc960e;
+    transition: background-color 300ms ease-in-out;
+}
+
+.title {
+    color: white;
+    position: relative;
+    font-size: 2.5em;
+    left: -35%;
+}
+
+.design {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.design div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.design div:nth-child(odd) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}

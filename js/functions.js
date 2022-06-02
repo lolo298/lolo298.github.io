@@ -4,6 +4,7 @@ particlesJS.load('particles', 'assets/particles.json', function() {
 });
 
 
+
 //Slick for carrousel
 $(document).ready(function() {
     $('#skills-carrousel').slick({
@@ -16,4 +17,71 @@ $(document).ready(function() {
         variableWidth: true,
         useTransform: false
     });
+});
+
+
+//navbar
+$(document).ready(function() {
+    let about = document.querySelector('.follow-about');
+    let project = document.querySelector('.follow-project');
+    let skill = document.querySelector('.follow-skill');
+    let contact = document.querySelector('.follow-contact');
+
+    let landingWp = new Waypoint({
+        element: document.querySelector('.landing'),
+        handler: function(direction) {
+
+            about.classList.replace('follow-active', 'follow-inactive');
+            project.classList.replace('follow-active', 'follow-inactive');
+            skill.classList.replace('follow-active', 'follow-inactive');
+            contact.classList.replace('follow-active', 'follow-inactive');
+        },
+        offset: '-10%'
+    })
+
+    let aboutWp = new Waypoint({
+        element: document.querySelector('.about'),
+        handler: function(direction) {
+
+            about.classList.replace('follow-inactive', 'follow-active');
+            project.classList.replace('follow-active', 'follow-inactive');
+            skill.classList.replace('follow-active', 'follow-inactive');
+            contact.classList.replace('follow-active', 'follow-inactive');
+        },
+        offset: '20%'
+    })
+    let projectWp = new Waypoint({
+        element: document.querySelector('.projects'),
+        handler: function(direction) {
+
+            project.classList.replace('follow-inactive', 'follow-active');
+            about.classList.replace('follow-active', 'follow-inactive');
+            skill.classList.replace('follow-active', 'follow-inactive');
+            contact.classList.replace('follow-active', 'follow-inactive');
+        },
+        offset: '20%'
+    })
+    let skillWp = new Waypoint({
+        element: document.getElementById('skills'),
+        handler: function(direction) {
+
+            skill.classList.replace('follow-inactive', 'follow-active');
+            project.classList.replace('follow-active', 'follow-inactive');
+            about.classList.replace('follow-active', 'follow-inactive');
+            contact.classList.replace('follow-active', 'follow-inactive');
+        },
+        offset: '20%'
+    })
+    let ContactWp = new Waypoint({
+        element: document.getElementById('contact'),
+        handler: function(direction) {
+
+            contact.classList.replace('follow-inactive', 'follow-active');
+            about.classList.replace('follow-active', 'follow-inactive');
+            skill.classList.replace('follow-active', 'follow-inactive');
+            project.classList.replace('follow-active', 'follow-inactive');
+        },
+        offset: '60%'
+    })
+
 });

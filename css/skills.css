@@ -16,11 +16,12 @@
 .slick-slide>div:hover .html-text,
 .slick-slide>div:hover .html {
     display: block;
-    right: 11%;
+    right: 10.5%;
 }
 
 .slick-slide>div:hover .html {
     filter: brightness(.3);
+    transition: filter 300ms ease-in-out;
 }
 
 
@@ -35,18 +36,19 @@
 .css-text {
     z-index: 100;
     position: relative;
-    left: 25%;
+    left: 23%;
     display: none;
 }
 
 .slick-slide>div:hover .css-text,
 .slick-slide>div:hover .css {
     display: block;
-    right: 5%;
+    right: 5.5%;
 }
 
 .slick-slide>div:hover .css {
     filter: brightness(.3);
+    transition: filter 300ms ease-in-out;
 }
 
 
@@ -73,6 +75,7 @@
 
 .slick-slide>div:hover .js {
     filter: brightness(.3);
+    transition: filter 300ms ease-in-out;
 }
 
 
@@ -94,11 +97,12 @@
 .slick-slide>div:hover .php-text,
 .slick-slide>div:hover .php {
     display: block;
-    right: 5%;
+    right: 5.5%;
 }
 
 .slick-slide>div:hover .php {
     filter: brightness(.3);
+    transition: filter 300ms ease-in-out;
 }
 
 
@@ -120,11 +124,12 @@
 .slick-slide>div:hover .sql-text,
 .slick-slide>div:hover .sql {
     display: block;
-    right: 5%;
+    right: 5.5%;
 }
 
 .slick-slide>div:hover .sql {
     filter: brightness(.3);
+    transition: filter 300ms ease-in-out;
 }
 
 
@@ -151,6 +156,7 @@
 
 .slick-slide>div:hover .c {
     filter: brightness(.3);
+    transition: filter 300ms ease-in-out;
 }
 
 
@@ -177,6 +183,7 @@
 
 .slick-slide>div:hover .affinity {
     filter: brightness(.3);
+    transition: filter 300ms ease-in-out;
 }
 
 
@@ -203,6 +210,7 @@
 
 .slick-slide>div:hover .adobe {
     filter: brightness(.3);
+    transition: filter 300ms ease-in-out;
 }
 
 
@@ -229,6 +237,7 @@
 
 .slick-slide>div:hover .davinci {
     filter: brightness(.3);
+    transition: filter 300ms ease-in-out;
 }
 
 
@@ -255,6 +264,7 @@
 
 .slick-slide>div:hover .figma {
     filter: brightness(.3);
+    transition: filter 300ms ease-in-out;
 }
 
 
@@ -281,30 +291,32 @@
 
 .slick-slide>div:hover .ue {
     filter: brightness(.3);
+    transition: filter 300ms ease-in-out;
 }
 
 
-/* styling of Unity skill */
+/* styling of wordpress skill */
 
-.unity {
+.wordpress {
     position: relative;
     width: 60%;
     height: 60%;
 }
 
-.unity-text {
+.wordpress-text {
     z-index: 100;
     position: relative;
     left: 35%;
     display: none;
 }
 
-.slick-slide>div:hover .unity-text,
-.slick-slide>div:hover .unity {
+.slick-slide>div:hover .wordpress-text,
+.slick-slide>div:hover .wordpress {
     display: block;
-    right: 7%;
+    right: 14.5%;
 }
 
-.slick-slide>div:hover .unity {
+.slick-slide>div:hover .wordpress {
     filter: brightness(.3);
+    transition: filter 300ms ease-in-out;
 }
