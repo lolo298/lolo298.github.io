@@ -20,7 +20,7 @@
 }
 
 .slick-slide>div:hover .html {
-    filter: brightness(.3);
+    filter: brightness(0.3);
     transition: filter 300ms ease-in-out;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .slick-slide>div:hover .css {
-    filter: brightness(.3);
+    filter: brightness(0.3);
     transition: filter 300ms ease-in-out;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .slick-slide>div:hover .js {
-    filter: brightness(.3);
+    filter: brightness(0.3);
     transition: filter 300ms ease-in-out;
 }
 
@@ -101,7 +101,7 @@
 }
 
 .slick-slide>div:hover .php {
-    filter: brightness(.3);
+    filter: brightness(0.3);
     transition: filter 300ms ease-in-out;
 }
 
@@ -128,7 +128,7 @@
 }
 
 .slick-slide>div:hover .sql {
-    filter: brightness(.3);
+    filter: brightness(0.3);
     transition: filter 300ms ease-in-out;
 }
 
@@ -155,7 +155,7 @@
 }
 
 .slick-slide>div:hover .c {
-    filter: brightness(.3);
+    filter: brightness(0.3);
     transition: filter 300ms ease-in-out;
 }
 
@@ -182,7 +182,7 @@
 }
 
 .slick-slide>div:hover .affinity {
-    filter: brightness(.3);
+    filter: brightness(0.3);
     transition: filter 300ms ease-in-out;
 }
 
@@ -209,7 +209,7 @@
 }
 
 .slick-slide>div:hover .adobe {
-    filter: brightness(.3);
+    filter: brightness(0.3);
     transition: filter 300ms ease-in-out;
 }
 
@@ -236,7 +236,7 @@
 }
 
 .slick-slide>div:hover .davinci {
-    filter: brightness(.3);
+    filter: brightness(0.3);
     transition: filter 300ms ease-in-out;
 }
 
@@ -263,7 +263,7 @@
 }
 
 .slick-slide>div:hover .figma {
-    filter: brightness(.3);
+    filter: brightness(0.3);
     transition: filter 300ms ease-in-out;
 }
 
@@ -290,7 +290,7 @@
 }
 
 .slick-slide>div:hover .ue {
-    filter: brightness(.3);
+    filter: brightness(0.3);
     transition: filter 300ms ease-in-out;
 }
 
@@ -317,6 +317,6 @@
 }
 
 .slick-slide>div:hover .wordpress {
-    filter: brightness(.3);
+    filter: brightness(0.3);
     transition: filter 300ms ease-in-out;
 }
