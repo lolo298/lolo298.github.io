@@ -181,7 +181,7 @@
 
 .presentation {
     width: 50%;
-    height: 90%;
+    height: max-content;
     padding: 2%;
     background-color: rgba(126, 126, 126, 0.6);
 }
