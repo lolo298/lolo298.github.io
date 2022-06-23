@@ -1,286 +1,330 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/skills.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" type="text/css" href="css/slick.css">
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
     <script src="waypoint/lib/noframework.waypoints.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script src="js/particles.js"></script>
     <script src="js/functions.js"></script>
 
     <title>Portfolio</title>
-</head>
+  </head>
 
-<body id="">
+  <body id="">
     <div id="particles"></div>
     <div class="main-container">
-        <nav class="main-navbar">
-            <a class="name" href="index.html">
-                <h1>Lorenzo Aoulini</h1>
+      <nav class="main-navbar">
+        <a class="name" href="index.html">
+          <h1>Lorenzo Aoulini</h1>
+        </a>
+        <div class="main-navbar-list">
+          <a class="main-navbar-item" href="#contact">
+            <div class="navbar-text contact-nav">Contact</div>
+            <div class="follow-inactive follow-contact follow"></div>
+          </a>
+          <a class="main-navbar-item" href="#skills">
+            <div class="navbar-text skills-nav">Compétences</div>
+            <div class="follow-inactive follow-skill follow"></div>
+          </a>
+          <a class="main-navbar-item" href="#projects">
+            <div class="navbar-text project-nav">Projets</div>
+            <div class="follow-inactive follow-project follow"></div>
+          </a>
+          <a class="main-navbar-item" href="#about">
+            <div class="navbar-text about-nav">A propos de moi</div>
+            <div class="follow-active follow-about follow"></div>
+          </a>
+        </div>
+      </nav>
+      <div class="landing" id="landing">
+        <div class="quote-container">
+          <div class="quote-text">
+            <q>
+              That was when I realized, as terrifying and painful as reality can
+              be, it’s also the only place where you can find true happiness.
+              Because reality is real.
+            </q>
+          </div>
+          <div class="author">
+            <div class="author-separation"></div>
+            <div class="author-content">
+              <p>
+                James Hallyday dans
+                <cite>Player One</cite> de Ernest Cline
+              </p>
+            </div>
+            <div class="author-separation"></div>
+          </div>
+        </div>
+      </div>
+      <div class="separation" id="about"></div>
+      <div class="about">
+        <div class="title-left">
+          <div class="title-content">
+            <div>
+              <h2>A propos de moi</h2>
+            </div>
+          </div>
+          <div class="title-underline-left"></div>
+        </div>
+        <div class="about-content">
+          <a
+            class="cv-container"
+            href="assets/Aoulini Lorenzo CV.pdf"
+            target="_blank"
+          >
+            <div class="cv">
+              <img src="assets/cv.png" alt="mon CV" />
+            </div>
+            <div class="download">Télécharger mon CV</div>
+          </a>
+          <div class="presentation">
+            <p>
+              Je suis étudiant à l'IUT de Lannion en MMI, je suis dans le
+              développement depuis 2017. Je suis passionné par le desgin 3D à
+              côté de ça vous trouverez ma collection de manga et de jeux vidéo,
+              je pratique également la boxe Thaï depuis 3 ans maintenant.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="separation" id="projects"></div>
+      <div class="projects">
+        <div class="title-right">
+          <div class="title-content">
+            <div>
+              <h2>Projets</h2>
+            </div>
+            <div class="title-underline-right"></div>
+          </div>
+        </div>
+        <div class="projects-content">
+          <div class="projects-carrousel">
+            <div class="project-item active" id="test1">
+              <a href="projects/design.html" class="bright">
+                <img src="assets/DesignProjects.jpg" />
+              </a>
+              <p class="centered">Design</p>
+            </div>
+            <div class="project-item next">
+              <a href="projects/boxe.html" class="bright">
+                <img src="assets/bda.png" />
+              </a>
+              <p class="centered">Boxing des abers</p>
+            </div>
+            <div class="project-item">
+              <a href="projects/BlueFantasy.html" class="bright">
+                <img src="assets/phoenix.jpg" />
+              </a>
+              <p class="centered">Blue Fantasy</p>
+            </div>
+            <div class="project-item prev" id="test3">
+              <a href="projects/webDex.html" class="bright">
+                <img src="assets/webDex.png" />
+              </a>
+              <p class="centered">webDex</p>
+            </div>
+
+            <div class="button-container">
+              <div class="button-left btn"><i class="arrow left"></i></div>
+              <div class="button-right btn"><i class="arrow right"></i></div>
+            </div>
+            <script>
+              const slides = document.querySelectorAll(".project-item");
+              const button = document.querySelectorAll(".btn");
+              const bright = document.querySelectorAll(".bright");
+
+              let current = 0;
+              let prev = 3;
+              let next = 1;
+
+              for (let i = 0; i < button.length; i++) {
+                button[i].addEventListener("click", () =>
+                  i == 0 ? gotoPrev() : gotoNext()
+                );
+              }
+
+              const gotoPrev = () =>
+                current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
+
+              const gotoNext = () =>
+                current < 3 ? gotoNum(current + 1) : gotoNum(0);
+
+              const gotoNum = (number) => {
+                current = number;
+                prev = current - 1;
+                next = current + 1;
+
+                for (let i = 0; i < slides.length; i++) {
+                  slides[i].classList.remove("active");
+                  slides[i].classList.remove("prev");
+                  slides[i].classList.remove("next");
+                }
+
+                if (next == 4) {
+                  next = 0;
+                }
+
+                if (prev == -1) {
+                  prev = 3;
+                }
+
+                slides[current].classList.add("active");
+                slides[prev].classList.add("prev");
+                slides[next].classList.add("next");
+              };
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="separation" id="skills"></div>
+      <div class="skills">
+        <div class="title-left">
+          <div class="title-content">
+            <div>
+              <h2>Compétences</h2>
+            </div>
+            <div class="title-underline-left"></div>
+          </div>
+        </div>
+        <div class="skills-content">
+          <div id="skills-carrousel">
+            <div class="slide-content html-slide">
+              <p class="html-text skill-text">HTML 5</p>
+              <img src="assets/skills/html.png" alt="html" class="html" />
+            </div>
+            <div class="slide-content php-slide">
+              <p class="php-text skill-text">PHP</p>
+              <img src="assets/skills/php.png" alt="php" class="php" />
+            </div>
+            <div class="slide-content css-slide">
+              <p class="css-text skill-text">CSS</p>
+              <img src="assets/skills/css.png" alt="css" class="css" />
+            </div>
+            <div class="slide-content sql-slide">
+              <p class="sql-text skill-text">SQL</p>
+              <img src="assets/skills/sql.png" alt="sql" class="sql" />
+            </div>
+            <div class="slide-content js-slide">
+              <p class="js-text skill-text">JavaScript</p>
+              <img src="assets/skills/js.png" alt="js" class="js" />
+            </div>
+            <div class="slide-content wordpress-slide">
+              <p class="wordpress-text">Wordpress</p>
+              <img
+                src="assets/skills/wordpress.png"
+                alt="wordpress"
+                class="wordpress"
+              />
+            </div>
+            <div class="slide-content c-slide">
+              <p class="c-text skill-text">C#</p>
+              <img src="assets/skills/C.png" alt="c" class="c" />
+            </div>
+            <div class="slide-content adobe-slide">
+              <p class="adobe-text skill-text">Adobe CC</p>
+              <img src="assets/skills/AdobeCC.png" alt="adobe" class="adobe" />
+            </div>
+            <div class="slide-content davinci-slide">
+              <p class="davinci-text skill-text">DaVinci</p>
+              <img
+                src="assets/skills/Davinci.png"
+                alt="davinci"
+                class="davinci"
+              />
+            </div>
+            <div class="slide-content affinity-slide">
+              <p class="affinity-text skill-text">Suite Affinity</p>
+              <img
+                src="assets/skills/Affinity.png"
+                alt="affinity"
+                class="affinity"
+              />
+            </div>
+
+            <div class="slide-content figma-slide">
+              <p class="figma-text skill-text">Figma</p>
+              <img src="assets/skills/Figma.png" alt="figma" class="figma" />
+            </div>
+            <div class="slide-content ue-slide">
+              <p class="ue-text skill-text">Unreal engine</p>
+              <img src="assets/skills/UE4.png" alt="Unreal engine" class="ue" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="separation" id="contact"></div>
+      <footer>
+        <div class="footer-content">
+          <div class="resaux">
+            <a class="github" href="https://github.com/lolo298">
+              <div></div>
             </a>
-            <div class="main-navbar-list">
-                <a class="main-navbar-item" href="#contact">
-                    <div class="navbar-text contact-nav">Contact</div>
-                    <div class="follow-inactive follow-contact follow"></div>
-                </a>
-                <a class="main-navbar-item" href="#skills">
-                    <div class="navbar-text skills-nav">Compétences</div>
-                    <div class="follow-inactive follow-skill follow"></div>
-                </a>
-                <a class="main-navbar-item" href="#projects">
-                    <div class="navbar-text project-nav">Projets</div>
-                    <div class="follow-inactive follow-project follow"></div>
-                </a>
-                <a class="main-navbar-item" href="#about">
-                    <div class="navbar-text about-nav">A propos de moi</div>
-                    <div class="follow-active follow-about follow"></div>
-                </a>
-            </div>
-
-        </nav>
-        <div class="landing" id="landing">
-            <div class="quote-container">
-                <div class="quote-text">
-                    <q>
-                    That was when I realized, as terrifying and painful as reality can be, it’s also the only place where you can find true happiness. Because reality is real.
-                </q>
-                </div>
-                <div class="author">
-                    <div class="author-separation"></div>
-                    <div class="author-content">
-                        <p>
-                            James Hallyday dans
-                            <cite>Player One</cite> de Ernest Cline
-                        </p>
-                    </div>
-                    <div class="author-separation"></div>
-                </div>
-
-            </div>
-
+            <a
+              class="linkedin"
+              href="https://www.linkedin.com/in/lorenzo-aoulini-a6772522a"
+            >
+              <div></div>
+            </a>
+            <a class="etude" href="https://iut-lannion.univ-rennes1.fr">
+              <div></div>
+            </a>
+            <a
+              class="mail"
+              href="mailto:lorenzoaoulini@mail.com?subject=contact"
+            >
+              <div></div>
+            </a>
+          </div>
+          <a class="top" href="#">
+            <div></div>
+          </a>
         </div>
-        <div class="separation" id="about"></div>
-        <div class="about">
-            <div class="title-left">
-                <div class="title-content">
-                    <div>
-                        <h2>A propos de moi</h2>
-                    </div>
-                </div>
-                <div class="title-underline-left"></div>
-            </div>
-            <div class="about-content">
-                <a class="cv-container" href="assets/Aoulini Lorenzo CV.pdf" target="_blank">
-                    <div class="cv">
-                        <img src="assets/cv.png" alt="mon CV">
-                    </div>
-                    <div class="download">Télécharger mon CV</div>
-                </a>
-                <div class="presentation">
-                    <p>
-                        Je suis étudiant à l'IUT de Lannion en MMI, je suis dans le développement depuis 2017. Je suis passionné par le desgin 3D à côté de ça vous trouverez ma collection de manga et de jeux vidéo, je pratique également la boxe Thaï depuis 3 ans maintenant.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="separation" id="projects"></div>
-        <div class="projects">
-            <div class="title-right">
-                <div class="title-content">
-                    <div>
-                        <h2>Projets</h2>
-                    </div>
-                    <div class="title-underline-right"></div>
-
-                </div>
-            </div>
-            <div class="projects-content">
-
-                <div class="projects-carrousel">
-                    <div class="project-item active">
-                        <a href="projects/design.html" class="bright"><img src="assets/DesignProjects.jpg"></a>
-                        <p class="centered">Design</p>
-                    </div>
-                    <div class=" project-item next">
-                        <a href="projects/BlueFantasy.html" class="bright"><img src="assets/phoenix.jpg"></a>
-                        <p class="centered">Blue Fantasy</p>
-                    </div>
-                    <div class="project-item">
-                        <a href="projects/webDex.html" class="bright"><img src="assets/webDex.png"></a>
-                        <p class="centered">webDex</p>
-                    </div>
-                    <div class="project-item">
-                        <a href="projects/design.html" class="bright"><img src="assets/DesignProjects.jpg"></a>
-                        <p class="centered">Design</p>
-                    </div>
-                    <div class="project-item">
-                        <a href="projects/BlueFantasy.html" class="bright"><img src="assets/phoenix.jpg"></a>
-                        <p class="centered">Blue Fantasy</p>
-                    </div>
-                    <div class="project-item prev">
-                        <a href="projects/webDex.html" class="bright"><img src="assets/webDex.png"></a>
-                        <p class="centered">webDex</p>
-                    </div>
-                    <div class="button-container">
-                        <div class="button-left btn"><i class="arrow left"></i></div>
-                        <div class="button-right btn"><i class="arrow right"></i></div>
-                    </div>
-                    <script>
-                        const slides = document.querySelectorAll(".project-item");
-                        const button = document.querySelectorAll(".btn");
-                        const bright = document.querySelectorAll(".bright");
-
-                        let current = 0;
-                        let prev = 5;
-                        let next = 1;
-
-                        for (let i = 0; i < button.length; i++) {
-                            button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
-                        }
-
-                        const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
-
-                        const gotoNext = () => current < 5 ? gotoNum(current + 1) : gotoNum(0);
-
-                        const gotoNum = number => {
-                            current = number;
-                            prev = current - 1;
-                            next = current + 1;
-
-                            for (let i = 0; i < slides.length; i++) {
-                                slides[i].classList.remove("active");
-                                slides[i].classList.remove("prev");
-                                slides[i].classList.remove("next");
-
-                            }
-
-                            if (next == 6) {
-                                next = 0;
-                            }
-
-                            if (prev == -1) {
-                                prev = 5;
-                            }
-
-                            slides[current].classList.add("active");
-                            slides[prev].classList.add("prev");
-                            slides[next].classList.add("next");
-                        }
-                    </script>
-                </div>
-
-            </div>
-        </div>
-        <div class="separation" id="skills"></div>
-        <div class="skills">
-            <div class="title-left">
-                <div class="title-content">
-                    <div>
-                        <h2>Compétences</h2>
-                    </div>
-                    <div class="title-underline-left"></div>
-                </div>
-            </div>
-            <div class="skills-content">
-                <div id="skills-carrousel">
-                    <div class="slide-content html-slide">
-                        <p class="html-text skill-text">HTML 5</p>
-                        <img src="assets/skills/html.png" alt="html" class="html">
-                    </div>
-                    <div class="slide-content php-slide">
-                        <p class="php-text skill-text">PHP</p>
-                        <img src="assets/skills/php.png" alt="php" class="php">
-                    </div>
-                    <div class="slide-content css-slide">
-                        <p class="css-text skill-text">CSS</p>
-                        <img src="assets/skills/css.png" alt="css" class="css">
-                    </div>
-                    <div class="slide-content sql-slide">
-                        <p class="sql-text skill-text">SQL</p>
-                        <img src="assets/skills/sql.png" alt="sql" class="sql">
-                    </div>
-                    <div class="slide-content js-slide">
-                        <p class="js-text skill-text">JavaScript</p>
-                        <img src="assets/skills/js.png" alt="js" class="js">
-                    </div>
-                    <div class="slide-content wordpress-slide">
-                        <p class="wordpress-text">Wordpress</p>
-                        <img src="assets/skills/wordpress.png" alt="wordpress" class="wordpress">
-                    </div>
-                    <div class="slide-content c-slide">
-                        <p class="c-text skill-text">C#</p>
-                        <img src="assets/skills/C.png" alt="c" class="c">
-                    </div>
-                    <div class="slide-content adobe-slide">
-                        <p class="adobe-text skill-text">Adobe CC</p>
-                        <img src="assets/skills/AdobeCC.png" alt="adobe" class="adobe">
-                    </div>
-                    <div class="slide-content davinci-slide">
-                        <p class="davinci-text skill-text">DaVinci</p>
-                        <img src="assets/skills/Davinci.png" alt="davinci" class="davinci">
-                    </div>
-                    <div class="slide-content affinity-slide">
-                        <p class="affinity-text skill-text">Suite Affinity</p>
-                        <img src="assets/skills/Affinity.png" alt="affinity" class="affinity">
-                    </div>
-
-                    <div class="slide-content figma-slide">
-                        <p class="figma-text skill-text">Figma</p>
-                        <img src="assets/skills/Figma.png" alt="figma" class="figma">
-                    </div>
-                    <div class="slide-content ue-slide">
-                        <p class="ue-text skill-text">Unreal engine</p>
-                        <img src="assets/skills/UE4.png" alt="Unreal engine" class="ue">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="separation" id="contact"></div>
-        <footer>
-            <div class="footer-content">
-                <div class="resaux">
-                    <a class="github" href="https://github.com/lolo298">
-                        <div></div>
-                    </a>
-                    <a class="linkedin" href="https://www.linkedin.com/in/lorenzo-aoulini-a6772522a">
-                        <div></div>
-                    </a>
-                    <a class="etude" href="https://iut-lannion.univ-rennes1.fr">
-                        <div></div>
-                    </a>
-                    <a class="mail" href="mailto:lorenzoaoulini@mail.com?subject=contact">
-                        <div></div>
-                    </a>
-                </div>
-                <a class="top" href="#">
-                    <div>
-                    </div>
-                </a>
-
-            </div>
-        </footer>
-        <div class="footer-back"></div>
-        <div class="footer-back2"></div>
+      </footer>
+      <div class="footer-back"></div>
+      <div class="footer-back2"></div>
     </div>
-
-
-</body>
-
+  </body>
 </html>
